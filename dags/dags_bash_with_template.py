@@ -22,7 +22,7 @@ with DAG(
             'START_DATE':'{{data_interval_start | ds}}',
             'END_DATE': '{{data_interval_end | ds}}'
         },
-        bash_commands='echo $START_DATE && echo $END_DATE'
+        bash_command='echo $START_DATE && echo $END_DATE'
         # && 앞에 있는 cmd 가 성공하면 뒤에 있는 cmd를 실행하겠다
     )
 
